@@ -19,6 +19,8 @@
   "ResourceOrderSettings": [
     {"name":"oGear2","order":1,"path":"objects/oGear2/oGear2.yy",},
     {"name":"BackGround","order":2,"path":"sprites/BackGround/BackGround.yy",},
+    {"name":"oPin","order":2,"path":"objects/oPin/oPin.yy",},
+    {"name":"Pin","order":3,"path":"sprites/Pin/Pin.yy",},
     {"name":"Gear2","order":1,"path":"sprites/Gear2/Gear2.yy",},
   ],
 }
