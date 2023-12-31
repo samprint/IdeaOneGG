@@ -13,4 +13,5 @@ Waht is the plan for this game
 -I want to find a way to place gears in a way their teeth and position align perfectly
 -How to create additional gear as clones of gear1
 	-Problem when using thhe mouse all gears move together (Change code for moving the gear) (Solved Done)
-	-How to avoid specifically the gear is colliding whith which gear but whith anygear instead thatt is rotating     
+	-How to avoid specifically the gear is colliding whith which gear but whith anygear instead thatt is rotating  
+-Make a condition if Pin already occupied don't accept another gear   
