@@ -34,6 +34,8 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"Gear1","path":"sprites/Gear1/Gear1.yy",},},
+    {"id":{"name":"Gear2","path":"sprites/Gear2/Gear2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
