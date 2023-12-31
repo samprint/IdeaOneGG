@@ -35,7 +35,10 @@
   },
   "resources": [
     {"id":{"name":"Gear1","path":"sprites/Gear1/Gear1.yy",},},
+    {"id":{"name":"oGear2","path":"objects/oGear2/oGear2.yy",},},
+    {"id":{"name":"BackGround","path":"sprites/BackGround/BackGround.yy",},},
     {"id":{"name":"Gear2","path":"sprites/Gear2/Gear2.yy",},},
+    {"id":{"name":"oGear1","path":"objects/oGear1/oGear1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
