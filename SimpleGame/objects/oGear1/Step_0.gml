@@ -34,3 +34,19 @@ if (l64C1DF16_0)
 		}
 	}
 }
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 5C425E75
+/// @DnDArgument : "var" "IsRotating"
+/// @DnDArgument : "value" "true"
+if(IsRotating == true)
+{
+	/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
+	/// @DnDVersion : 1
+	/// @DnDHash : 253C9EA3
+	/// @DnDParent : 5C425E75
+	/// @DnDArgument : "angle" "1"
+	/// @DnDArgument : "angle_relative" "1"
+	image_angle += 1;
+}

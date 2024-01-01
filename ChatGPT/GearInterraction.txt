@@ -2,5 +2,45 @@ You could introduce a GearInteraction object that encapsulates the interaction b
 
 In this code, each Gear has a list of GearInteraction objects. When a gear rotates, it tells all the gears it’s driving to rotate in the opposite direction. This way, each gear knows exactly which gears it’s driving.
 
-This is a simplified example and might need to be adjusted based on your specific game mechanics. For example, you might need to handle cases where a gear is both driving and being driven by different gears at the same time. But hopefully, this gives you a starting point! 
+This is a simplified example and might need to be adjusted based on your specific game mechanics. For example, you might need to handle cases where a gear is both driving and being driven by different gears at the same time. But hopefully, this gives you a starting point!
 
+------------------------
+
+In the case where a gear is both driving and being driven by different gears, you can modify the Gear class to handle this scenario. Here’s how you can do it:
+
+class Gear {
+    constructor() {
+        this.interactions = [];
+    }
+
+    interactWith(gear, isDriving) {
+        let interaction = new GearInteraction(this, gear, isDriving);
+        this.interactions.push(interaction);
+    }
+
+    rotate() {
+        for(let interaction of this.interactions) {
+            if(interaction.isDriving) {
+                interaction.drivenGear.rotateOpposite();
+            } else {
+                interaction.driverGear.rotate();
+            }
+        }
+    }
+
+    rotateOpposite() {
+        // Rotate this gear in the opposite direction
+    }
+}
+
+class GearInteraction {
+    constructor(driverGear, drivenGear, isDriving) {
+        this.driverGear = driverGear;
+        this.drivenGear = drivenGear;
+        this.isDriving = isDriving;
+    }
+} 
+
+In this code, the interactWith method now takes an additional parameter isDriving that indicates whether the current gear is driving the other gear. When a gear rotates, it checks the isDriving property of each interaction. If isDriving is true, it tells the driven gear to rotate in the opposite direction. If isDriving is false, it tells the driver gear to rotate in the same direction.
+
+This way, a gear can both drive other gears and be driven by other gears at the same time. The direction of rotation depends on whether the gear is the driver or the driven in each interaction. This should help you handle the case where a gear is both driving and being driven by different gears at the same time.

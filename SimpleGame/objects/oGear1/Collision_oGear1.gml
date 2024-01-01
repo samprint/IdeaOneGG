@@ -1,21 +1,15 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 70ECEF04
-/// @DnDArgument : "var" "other.image_blend"
-/// @DnDArgument : "value" "$FF6C0AFF & $ffffff"
-if(other.image_blend == $FF6C0AFF & $ffffff)
+/// @DnDHash : 2D49EB1C
+/// @DnDArgument : "var" "IsDriver"
+/// @DnDArgument : "value" "true"
+if(IsDriver == true)
 {
-	/// @DnDAction : YoYo Games.Instances.Color_Sprite
+	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 627161D0
-	/// @DnDParent : 70ECEF04
-	/// @DnDArgument : "colour" "$FF6C0AFF"
-	/// @DnDArgument : "alpha" "false"
-	image_blend = $FF6C0AFF & $ffffff;
+	/// @DnDHash : 23A23DFE
+	/// @DnDParent : 2D49EB1C
+	/// @DnDArgument : "expr" "-image_angle"
+	/// @DnDArgument : "var" "other.image_angle"
+	other.image_angle = -image_angle;
 }
-
-/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
-/// @DnDVersion : 1
-/// @DnDHash : 29C0671B
-/// @DnDArgument : "angle" "-other.image_angle"
-image_angle = -other.image_angle;
