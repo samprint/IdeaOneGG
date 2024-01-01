@@ -1,0 +1,6 @@
+You could introduce a GearInteraction object that encapsulates the interaction between two gears. This object would have two properties: driverGear and drivenGear. When a gear interacts with another, you create a new GearInteraction instance.
+
+In this code, each Gear has a list of GearInteraction objects. When a gear rotates, it tells all the gears it’s driving to rotate in the opposite direction. This way, each gear knows exactly which gears it’s driving.
+
+This is a simplified example and might need to be adjusted based on your specific game mechanics. For example, you might need to handle cases where a gear is both driving and being driven by different gears at the same time. But hopefully, this gives you a starting point! 
+

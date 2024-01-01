@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 70ECEF04
 /// @DnDArgument : "var" "other.image_blend"
-/// @DnDArgument : "value" "$FF6C0AFF"
-if(other.image_blend == $FF6C0AFF)
+/// @DnDArgument : "value" "$FF6C0AFF & $ffffff"
+if(other.image_blend == $FF6C0AFF & $ffffff)
 {
 	/// @DnDAction : YoYo Games.Instances.Color_Sprite
 	/// @DnDVersion : 1

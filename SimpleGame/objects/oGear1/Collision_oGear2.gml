@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 7ECD3DFF
 /// @DnDArgument : "colour" "$FF6C0AFF"
+/// @DnDArgument : "alpha" "false"
 image_blend = $FF6C0AFF & $ffffff;
-image_alpha = ($FF6C0AFF >> 24) / $ff;
 
 /// @DnDAction : YoYo Games.Instances.Sprite_Rotate
 /// @DnDVersion : 1
