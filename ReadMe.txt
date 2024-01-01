@@ -15,3 +15,16 @@ Waht is the plan for this game
 	-Problem when using thhe mouse all gears move together (Change code for moving the gear) (Solved Done)
 	-How to avoid specifically the gear is colliding whith which gear but whith anygear instead thatt is rotating  
 -Make a condition if Pin already occupied don't accept another gear   
+
+---------------------
+
+3:17 PM 1/1/2024
+
+Next steps:
+-I want the gears not glitching everytime I move them
+-I want a final gear goal to achieve the level
+-Create a story arround the gear
+-Try improve look and mechanics
+
+-->Click an object to instanciate a gear
+-->Drop a gear into another object to get rid of it

@@ -19,8 +19,12 @@
   "ResourceOrderSettings": [
     {"name":"oGear2","order":1,"path":"objects/oGear2/oGear2.yy",},
     {"name":"BackGround","order":2,"path":"sprites/BackGround/BackGround.yy",},
+    {"name":"Generator","order":4,"path":"sprites/Generator/Generator.yy",},
     {"name":"oPin","order":2,"path":"objects/oPin/oPin.yy",},
+    {"name":"oGenerator","order":3,"path":"objects/oGenerator/oGenerator.yy",},
     {"name":"Pin","order":3,"path":"sprites/Pin/Pin.yy",},
+    {"name":"Eliminator","order":5,"path":"sprites/Eliminator/Eliminator.yy",},
+    {"name":"oEliminator","order":4,"path":"objects/oEliminator/oEliminator.yy",},
     {"name":"Gear2","order":1,"path":"sprites/Gear2/Gear2.yy",},
   ],
 }
