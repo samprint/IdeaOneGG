@@ -26,7 +26,9 @@ if(place_meeting(x,y,oGear1) == false)
 	IsDriven = false;
 }
 
-if(IsRotating == true)
+
+// If it is a driver then it is rotating by nature
+if(IsDriver == true)
 {
 	image_angle += 1;
 }

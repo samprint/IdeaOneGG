@@ -4,8 +4,6 @@ if(IsDriver == true)
 
 	other.IsDriven = true;
 
-	IsDriving = true;
-
 	other.image_blend = $FF7214FF & $ffffff;
 }
 
@@ -18,7 +16,5 @@ if(IsDriven == true)
 		other.IsDriven = true;
 	
 		other.image_blend = $FF7214FF & $ffffff;
-
-		IsDriving = true;
 	}
 }
