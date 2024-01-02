@@ -8,6 +8,8 @@ if (l64C1DF16_0)
 		{
 			x = mouse_x;
 			y = mouse_y;
+			
+			image_angle = 0
 		}
 	}
 }

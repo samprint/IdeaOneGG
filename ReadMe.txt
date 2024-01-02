@@ -28,3 +28,36 @@ Next steps:
 
 -->Click an object to instanciate a gear
 -->Drop a gear into another object to get rid of it
+
+------------------
+
+4:51 PM 1/2/2024
+
+Reanalysingthe gear interraction becasue still have problem moving gear arround
+
+Gear could be in many states:
+-A gear Is a driver and rotating or off
+-A Is driven could be rotating or off
+
+States:
+-(Rotating) by itself because it is a driver
+-(Rotating) because it is driven
+-(Driven) because is (connected) to a Driver or Driven gear
+
+States are:
+-Rotating + or -
+-Driven
+-Connected to a gear
+-Driver (rotate by itself)
+
+for a gear to rotate should be either:
+-A driver
+-Conncted to a rotating driver
+-Connected to a driven gear
+
+for a gear to be driven:
+-should be connected to a driver
+-should be connected to driven gear
+
+
+
