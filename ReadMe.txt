@@ -28,3 +28,5 @@ Next steps:
 
 -->Click an object to instanciate a gear
 -->Drop a gear into another object to get rid of it
+
+Did not succed in solving problem
