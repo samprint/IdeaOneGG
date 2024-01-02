@@ -15,10 +15,10 @@ if(IsDriven == true)
 	{
 		other.image_angle = -image_angle;
 	
-		IsDriving = true;
-	
 		other.IsDriven = true;
 	
 		other.image_blend = $FF7214FF & $ffffff;
+
+		IsDriving = true;
 	}
 }
