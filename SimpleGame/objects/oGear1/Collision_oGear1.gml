@@ -1,20 +1,13 @@
-if(IsDriver == true)
+
+
+IsConnected = true
+if ((other.IsDriver) or (other.IsDriven))
 {
-	other.image_angle = -image_angle;
-
-	other.IsDriven = true;
-
-	other.image_blend = $FF7214FF & $ffffff;
-}
-
-if(IsDriven == true)
-{
-	if(other.IsDriver == false)
+	if (!IsDriver)
 	{
-		other.image_angle = -image_angle;
-	
-		other.IsDriven = true;
-	
-		other.image_blend = $FF7214FF & $ffffff;
+		image_angle = -other.image_angle;
+		image_blend = $FF7214FF & $ffffff;
+		IsDriven = true
 	}
 }
+

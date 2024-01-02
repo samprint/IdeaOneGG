@@ -8,29 +8,28 @@ if (l64C1DF16_0)
 		{
 			x = mouse_x;
 			y = mouse_y;
-			
-			image_angle = 0
 		}
 	}
 }
 
-if(IsDriver == false)
-{
-	if(IsDriven == false)
-	{
-		image_blend = $FF4FFFF0 & $ffffff;
-		image_alpha = ($FF4FFFF0 >> 24) / $ff;
-	}
-}
 
-if(place_meeting(x,y,oGear1) == false)
+if(!place_meeting(x,y,oGear1))
 {
 	IsDriven = false;
+	IsConnected = false;
 }
 
 
-// If it is a driver then it is rotating by nature
-if(IsDriver == true)
+if (!IsConnected and !IsDriver)
 {
-	image_angle += 1;
+			image_blend = $FF4FFFF0 & $ffffff;
+			image_alpha = ($FF4FFFF0 >> 24) / $ff;
+}
+
+
+
+// If it is a driver is rotating then it should rotate
+if(IsDriver and IsRotating)
+{
+	image_angle += 3;
 }
