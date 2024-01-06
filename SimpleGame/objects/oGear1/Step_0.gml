@@ -1,6 +1,4 @@
-var l64C1DF16_0;
-l64C1DF16_0 = mouse_check_button(mb_left);
-if (l64C1DF16_0)
+if (mouse_check_button(mb_left))
 {
 	if(abs(mouse_x - x) < 25)
 	{
